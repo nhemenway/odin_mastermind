@@ -2,17 +2,21 @@ class Secret
   attr_reader :secret
   
   def initialize
-    create_secret
+    generate_secret
   end
 
   private
 
-  def create_secret
+  def generate_secret
     @secret = []
 
     4.times do
       @secret << rand(1..6)
     end
+  end
+
+  def set_secret
+
   end
 
 end
